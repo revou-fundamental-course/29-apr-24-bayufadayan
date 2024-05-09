@@ -16,6 +16,8 @@ nav{
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid #1AA3AD;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .logo-brand{
@@ -55,13 +57,11 @@ main{
 .wrapper{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     width: 85%;
-    background-color: red;
 }
 
 .header-section{
-    background-color: khaki;
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
@@ -70,14 +70,12 @@ main{
 }
 
 .header-tagline{
-    background-color: olive;
     font-size: x-large;
     text-align: center;
     width: 60%;
 }
 
 .tagline-description{
-    background-color: aquamarine;
     width: 60%;
     text-align: center;
 }
@@ -87,21 +85,16 @@ main{
 }
 
 .main-section{
-    background-color: lightblue;
     display: flex;
     justify-content: space-between;
 }
 
 .main-content{
-    background-color: indianred;
     width: 60%;
     padding: 1rem;
-}
-
-.contact-us{
-    background-color: darkblue;
-    width: 40%;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
 }
 
 .banner-slider{
@@ -114,4 +107,246 @@ main{
     height: 100%;
     object-fit: cover;
     border-radius: 9px;
+}
+
+.review-card{
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid #D9D9D9;
+}
+
+.review-card .review-content{
+    font-size: larger;
+    font-style: oblique;
+    margin-bottom: 1.2rem;
+}
+
+.reviewer-account{
+    display: flex;
+    background-color: #D9D9D9;
+    gap: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.user-detail h5{
+    font-size: medium;
+}
+
+.reviewer-account .user-profile{
+    width: 40px;
+    height: 40px;
+}
+
+.reviewer-account .user-profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.service-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-container h2{
+    font-size: xx-large;
+
+}
+
+.service-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service-item{
+    display: flex;
+    align-items: center;
+}
+
+.service-item .number{
+    background-color: rgba(26, 163, 173, .2);
+    border-radius: 50px;
+    font-size: large;
+    font-weight: 600;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.7rem;
+}
+
+.service-item .information{
+    font-size: large;
+    font-weight: 500;
+}
+
+.contact-us{
+    background-color: rgba(26, 163, 173, .2);
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.contact-main-title h2{
+    font-size: xx-large;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-form .form-input{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-form .form-input input, select{
+    height: 2.5rem;
+    border-radius: 4px;
+    border: none;
+    padding-inline: 0.6rem;
+}
+
+.submit{
+    margin-top: 1rem;
+}
+
+.submit input{
+    background-color: #1AA3AD;
+    font-size: large;
+    font-weight: 700;
+    color: white;
+}
+
+
+.our-package-title{
+    background-color: #1AA3AD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    padding-block: 1.8rem;
+    color: white;
+    border-radius: 10px;
+}
+
+.our-package-title h2{
+    font-weight: 900;
+}
+
+.package-container{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.package-card{
+    max-width: 32%;
+    min-width: 30%;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 30vh;
+    margin-bottom: 1rem;
+    background-color: rgba(79, 175, 182, 0.2);
+}
+
+.logo-title{
+    display: flex;
+    gap: 0.5rem;
+    font-size: large;
+    margin-bottom: 0.7rem;
+}
+
+.only-icon{
+    background-color: #dfdfdf;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: larger;
+}
+
+.logo-title h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: larger;
+}
+
+.package-information p{
+    text-align: justify;
+}
+
+.closing-statement{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.closing-statement h2{
+    font-size: xx-large;
+}
+
+.closing-statement p{
+    max-width: 60%;
+    text-align: center;
+}
+
+.closing-statement button {
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+footer{
+    margin-top: 8rem;
+    background-color: #1AA3AD;
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    padding-left: 5rem;
+    color: white;
+}
+
+.wrapper-footer{
+    width: 60%;
+}
+
+.footer-logo{
+    height: 30vh;
+    width: 30%;
+    margin-left: 3rem;
+}
+
+.footer-logo img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.footer-content, .copyright{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 10px;
 }
