@@ -99,7 +99,7 @@ main{
 
 .banner-slider{
     width: 100%;
-    height: 75%;
+    height: 360px;
 }
 
 .banner-slider img{
@@ -107,6 +107,25 @@ main{
     height: 100%;
     object-fit: cover;
     border-radius: 9px;
+}
+
+.button-nav{
+    background-color: rgba(26, 163, 173, .2);
+    padding: 0.4rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-nav button{
+    padding-inline: 2rem;
+    padding-block: 0.3rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: medium;
+    background-color: white;
+    cursor: pointer;
 }
 
 .review-card{
