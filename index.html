@@ -64,13 +64,13 @@
         <section class="main-section">
           <div class="main-content">
             <div class="banner-slider">
-              <img src="assets/banner-1.jpg" alt="gambar" class="img-banner"/>
-              <img src="assets/banner-2.jpg" alt="gambar" class="img-banner"/>
-              <img src="assets/banner-3.jpg" alt="gambar" class="img-banner"/>
-              <img src="assets/banner-4.jpg" alt="gambar" class="img-banner"/>
-              <img src="assets/banner-5.jpg" alt="gambar" class="img-banner"/>
-              <img src="assets/banner-6.jpg" alt="gambar" class="img-banner"/>
-              <img src="assets/banner-7.jpg" alt="gambar" class="img-banner"/>
+              <img src="assets/banner-1.jpg" alt="gambar" class="img-banner" />
+              <img src="assets/banner-2.jpg" alt="gambar" class="img-banner" />
+              <img src="assets/banner-3.jpg" alt="gambar" class="img-banner" />
+              <img src="assets/banner-4.jpg" alt="gambar" class="img-banner" />
+              <img src="assets/banner-5.jpg" alt="gambar" class="img-banner" />
+              <img src="assets/banner-6.jpg" alt="gambar" class="img-banner" />
+              <img src="assets/banner-7.jpg" alt="gambar" class="img-banner" />
             </div>
 
             <div class="button-nav">
@@ -131,35 +131,47 @@
 
             <hr />
             <div class="contact-form">
-              <form action="">
+              <form action="#" name="contact-form" onsubmit="return validateForm()">
                 <div class="form-input">
-                  <label for="">Your Name</label>
-                  <input type="text" />
+                  <label for="client-name">Your Name</label>
+                  <input type="text" id="client-name" name="client-name" placeholder="Insert your actual name" \/>
+                  <p id="client-name-error" class="error-text"></p>
                 </div>
                 <div class="form-input">
-                  <label for="">Email Address</label>
-                  <input type="email" />
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="Insert your actual email"/>
+                  <p id="email-error" class="error-text"></p>
                 </div>
                 <div class="form-input">
-                  <label for="">What are you interested in?</label>
-                  <select name="" id="">
-                    <option value="">1</option>
-                    <option value="">1</option>
-                    <option value="">1</option>
-                    <option value="">1</option>
-                    <option value="">1</option>
+                  <label for="choose">What are you interested in?</label>
+                  <select name="user-interest" id="choose" name="user-interest">
+                    <option value="" selected>
+                      ---------- Please Choose ---------- 
+                    </option>
+                    <option value="Custom Travel Packages">
+                      Custom Travel Packages
+                    </option>
+                    <option value="Adventure Tours">Adventure Tours</option>
+                    <option value="Cultural and Historical Tours">
+                      Cultural and Historical Tours
+                    </option>
+                    <option value="Luxury Travel">Luxury Travel</option>
+                    <option value="Eco and Sustainable Tours">
+                      Eco and Sustainable Tours
+                    </option>
                   </select>
+                  <p id="user-interest-error" class="error-text"></p>
                 </div>
 
                 <div class="form-input submit">
-                  <input type="submit" />
+                  <input type="submit" id="submit" />
                 </div>
               </form>
             </div>
           </div>
         </section>
 
-        <section class="our-package-section">
+        <section class="our-package-section" id="our-package">
           <div class="our-package-title">
             <h2>Our Package</h2>
           </div>
@@ -187,7 +199,7 @@
                 <div class="only-icon">
                   <i class="fa-solid fa-lightbulb"></i>
                 </div>
-                <h4>Bali</h4>
+                <h4>Japan</h4>
               </div>
 
               <div class="package-information">
@@ -205,7 +217,7 @@
                 <div class="only-icon">
                   <i class="fa-solid fa-lightbulb"></i>
                 </div>
-                <h4>Bali</h4>
+                <h4>Singapore</h4>
               </div>
 
               <div class="package-information">
@@ -221,9 +233,9 @@
             <div class="package-card">
               <div class="logo-title">
                 <div class="only-icon">
-                  <i class="fa-solid fa-lightbulb"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <h4>Bali</h4>
+                <h4>Bandung</h4>
               </div>
 
               <div class="package-information">
@@ -239,9 +251,9 @@
             <div class="package-card">
               <div class="logo-title">
                 <div class="only-icon">
-                  <i class="fa-solid fa-lightbulb"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <h4>Bali</h4>
+                <h4>Surabaya</h4>
               </div>
 
               <div class="package-information">
@@ -257,9 +269,9 @@
             <div class="package-card">
               <div class="logo-title">
                 <div class="only-icon">
-                  <i class="fa-solid fa-lightbulb"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <h4>Bali</h4>
+                <h4>Manukwari</h4>
               </div>
 
               <div class="package-information">
@@ -286,7 +298,7 @@
 
           <p><strong>ASCADIA - Your Gateway to Dream Destinations.</strong></p>
 
-          <a href="#"><button>Call to Action</button></a>
+          <a href="" id="call-us"><button>Call to Action</button></a>
         </section>
       </div>
     </main>
