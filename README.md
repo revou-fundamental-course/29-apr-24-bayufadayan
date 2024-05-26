@@ -1,8 +1,5 @@
 # Ascadia Travel Agency
 
-Get access with this link : 
-https://bayufadayan.github.io/ascadia-travel-agency/
-or
 https://revou-fundamental-course.github.io/29-apr-24-bayufadayan/
 
 Welcome to the repository for the Ascadia Travel Agency website! Ascadia is a responsive travel agency website that helps users explore and book their travel plans with ease.
